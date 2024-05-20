@@ -1,0 +1,18 @@
+{
+    "lang": "en-us",
+    "name": "Realtime Visual JS",
+    "short_name": "RTVJS",
+    "description": "A realtime visualization plattform",
+    "start_url": "/index.html",
+    "background_color": "#89898d",
+    "theme_color": "#89898d",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/img/icon512.png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ]
+}
