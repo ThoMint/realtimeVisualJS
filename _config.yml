@@ -15,11 +15,11 @@ include:
   - _pages
   - _posts
   - _data
-  - ./
-  - /
   - node_modules
   - sw.js
   - manifest.json
+
+include_dir: "."
 
 # Exclude from processing
 exclude:
