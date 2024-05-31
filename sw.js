@@ -1,6 +1,6 @@
 const CACHE_NAME = `rtvjs-v1`;
 
-var GHPATH = '/github-page-pwa';
+var GHPATH = '/realtimeVisualJS';
 
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
