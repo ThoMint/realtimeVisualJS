@@ -12,12 +12,17 @@ theme: minima
 
 # Directory settings
 include:
+  - _pages
+  - _posts
+  - _data
+  - node_modules
   - sw.js
   - manifest.json
-  - node_modules
 
 # Exclude from processing
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
 
 # Markdown processor settings
