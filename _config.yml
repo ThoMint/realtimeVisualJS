@@ -1,10 +1,10 @@
 # Site settings
-title: Your Site Title
-email: your-email@example.com
+title: Realtime Visual JS
+email: thomas.hofmann2003@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Your site's description here.
+  Realtime plotting and configuration PWA.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourusername.github.io" # the base hostname & protocol for your site
+url: "https://thomint.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -12,15 +12,12 @@ theme: minima
 
 # Directory settings
 include:
-  - _pages
-  - _posts
-  - _data
+  - sw.js
+  - manifest.json
   - node_modules
 
 # Exclude from processing
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - README.md
 
 # Markdown processor settings
