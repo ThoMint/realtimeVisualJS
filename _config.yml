@@ -16,7 +16,7 @@ include:
   - _posts
   - _data
   - ./
-  - 
+  - /
   - node_modules
   - sw.js
   - manifest.json
