@@ -18,6 +18,9 @@ include:
   - node_modules
   - sw.js
   - manifest.json
+  - "sw.js"
+  - "manifest.json"
+  - "/"
 
 include_dir: "."
 
