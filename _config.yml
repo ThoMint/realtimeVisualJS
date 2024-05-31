@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomint.github.io" # the base hostname & protocol for your site
 
 # Build settings
-markdown: kramdown
+markdown: none
 theme: minima
 
 # Directory settings
@@ -24,10 +24,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-
-# Markdown processor settings
-kramdown:
-  input: GFM
+  - "*.markdown"
+  - "*.md"
+  - "*.mkd"
+  - "*.mkdn"
+  - "*.mdwn"
+  - "*.mdown"
+  - "*.mdtxt"
+  - "*.mdtext"
 
 # Enable GitHub Pages
 github:
