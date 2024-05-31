@@ -1,4 +1,4 @@
-var VERSION = `v1`;
+var VERSION = `v2`;
 var APP_PREFIX = 'rtvjs_';
 var GHPATH = '/realtimeVisualJS';
 
@@ -36,17 +36,7 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '${GHPATH}/',
-      '${GHPATH}/manifest.json',
-      '${GHPATH}/node_modules/d3/dist/d3.js',
-      '${GHPATH}/node_modules/timechart/dist/timechart.min.js',
-      '${GHPATH}/node_modules/gridstack/dist/gridstack-all.js',
-      '${GHPATH}/node_modules/gridstack/dist/gridstack.min.css',
-      '${GHPATH}/img/sine.png',
-      '${GHPATH}/img/icon512.png',
-      '${GHPATH}/src/style.css',
-      '${GHPATH}/src/index.js',
-      '${GHPATH}/index.html'
+      './index.html'
     ]);
   })());
 });
