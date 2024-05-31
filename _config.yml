@@ -3,7 +3,7 @@ title: Realtime Visual JS
 email: thomas.hofmann2003@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Realtime plotting and configuration PWA.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/realtimeVisualJS" # the subpath of your site, e.g. /blog
 url: "https://thomint.github.io" # the base hostname & protocol for your site
 
 # Build settings
@@ -33,7 +33,7 @@ exclude:
 
 # Enable GitHub Pages
 github:
-  is_project_page: true
+  is_project_page: false
 
 # Other settings (customize as needed)
 # Add any additional plugins or configurations here
