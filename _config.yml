@@ -1,4 +1,41 @@
-lsi: false
-safe: true
-source: .
-include: ["node_modules"]
+# Site settings
+title: Your Site Title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Your site's description here.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Directory settings
+include:
+  - _pages
+  - _posts
+  - _data
+  - node_modules
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Markdown processor settings
+kramdown:
+  input: GFM
+
+# Enable GitHub Pages
+github:
+  is_project_page: true
+
+# Other settings (customize as needed)
+# Add any additional plugins or configurations here
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
