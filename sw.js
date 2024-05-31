@@ -1,21 +1,23 @@
 const CACHE_NAME = `rtvjs-v1`;
 
+var GHPATH = '/github-page-pwa';
+
 // Use the install event to pre-cache all initial resources.
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-      '/',
-      '/manifest.json',
-      '/node_modules/d3/dist/d3.js',
-      '/node_modules/timechart/dist/timechart.min.js',
-      '/node_modules/gridstack/dist/gridstack-all.js',
-      '/node_modules/gridstack/dist/gridstack.min.css',
-      '/img/sine.png',
-      '/img/icon512.png',
-      '/src/style.css',
-      '/src/index.js',
-      '/index.html'
+      '${GHPATH}/',
+      '${GHPATH}/manifest.json',
+      '${GHPATH}/node_modules/d3/dist/d3.js',
+      '${GHPATH}/node_modules/timechart/dist/timechart.min.js',
+      '${GHPATH}/node_modules/gridstack/dist/gridstack-all.js',
+      '${GHPATH}/node_modules/gridstack/dist/gridstack.min.css',
+      '${GHPATH}/img/sine.png',
+      '${GHPATH}/img/icon512.png',
+      '${GHPATH}/src/style.css',
+      '${GHPATH}/src/index.js',
+      '${GHPATH}/index.html'
     ]);
   })());
 });
