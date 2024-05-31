@@ -1,8 +1,18 @@
-var VERSION = `v2`;
+var VERSION = `v3`;
 var APP_PREFIX = 'rtvjs_';
 var GHPATH = '/realtimeVisualJS';
 
 var URLS = [
+  './',
+  './manifest.json',
+  './node_modules/d3/dist/d3.js',
+  './node_modules/timechart/dist/timechart.min.js',
+  './node_modules/gridstack/dist/gridstack-all.js',
+  './node_modules/gridstack/dist/gridstack.min.css',
+  './img/sine.png',
+  './img/icon512.png',
+  './src/style.css',
+  './src/index.js',
   './index.html'
 ]
 
@@ -23,23 +33,15 @@ self.addEventListener('fetch', function (e) {
   )
 })
 
-// self.addEventListener('install', function (e) {
-//   e.waitUntil(
-//     caches.open(CACHE_NAME).then(function (cache) {
-//       console.log('Installing cache : ' + CACHE_NAME);
-//       return cache.addAll(URLS)
-//     })
-//   )
-// })
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('Installing cache : ' + CACHE_NAME);
+      return cache.addAll(URLS)
+    })
+  )
+})
 
-self.addEventListener('install', event => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    cache.addAll([
-      './index.html'
-    ]);
-  })());
-});
 
 self.addEventListener('activate', function (e) {
   e.waitUntil(
