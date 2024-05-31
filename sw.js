@@ -1,14 +1,10 @@
-var VERSION = `rtvjs-v1`;
-var APP_PREFIX = 'rtvjs';
+var VERSION = `v1`;
+var APP_PREFIX = 'rtvjs_';
 var GHPATH = '/realtimeVisualJS';
 
 var URLS = [    
   '${GHPATH}/',
   '${GHPATH}/manifest.json',
-  '${GHPATH}/node_modules/d3/dist/d3.js',
-  '${GHPATH}/node_modules/timechart/dist/timechart.min.js',
-  '${GHPATH}/node_modules/gridstack/dist/gridstack-all.js',
-  '${GHPATH}/node_modules/gridstack/dist/gridstack.min.css',
   '${GHPATH}/img/sine.png',
   '${GHPATH}/img/icon512.png',
   '${GHPATH}/src/style.css',
