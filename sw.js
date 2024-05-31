@@ -3,7 +3,7 @@ var APP_PREFIX = 'rtvjs_';
 var GHPATH = '/realtimeVisualJS';
 
 var URLS = [
-  '/index.html'
+  './index.html'
 ]
 
 var CACHE_NAME = APP_PREFIX + VERSION
