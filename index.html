@@ -8,8 +8,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">   
     <meta name="theme-color" content="#317EFB"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="img/sine.png" />
-    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="/realtimeVisualJS/img/sine.png" />
+    <link rel="canonical" href="https://thomint.github.io/realtimeVisualJS/" />
+    <link rel="manifest" href="/realtimeVisualJS/manifest.json">
 
     <title>Realtime Visual JS</title>
 </head>
@@ -31,7 +32,7 @@
     <script src="src/index.js"></script>
     <script>
         if('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js', { scope: '/' });
+            navigator.serviceWorker.register('/realtimeVisualJS/sw.js', { scope: '/realtimeVisualJS/' });
         }
         else {
             console.log("NO SERVICE WORKER SUPPORT");
