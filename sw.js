@@ -2,13 +2,7 @@ var VERSION = `v1`;
 var APP_PREFIX = 'rtvjs_';
 var GHPATH = '/realtimeVisualJS';
 
-var URLS = [    
-  '${GHPATH}/',
-  '${GHPATH}/manifest.json',
-  '${GHPATH}/img/sine.png',
-  '${GHPATH}/img/icon512.png',
-  '${GHPATH}/src/style.css',
-  '${GHPATH}/src/index.js',
+var URLS = [
   '${GHPATH}/index.html'
 ]
 
