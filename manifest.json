@@ -28,6 +28,13 @@
           "type": "image/gif",
           "form_factor": "wide",
           "label": "RTVJS"
+        },
+        {
+            "src": "/realtimeVisualJS/img/screenshot_narrow.png",
+             "sizes": "1170x2532",
+             "type": "image/gif",
+             "form_factor": "narrow",
+             "label": "RTVJS"
         }
     ]
 }
