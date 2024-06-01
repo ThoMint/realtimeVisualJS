@@ -20,5 +20,14 @@
             "sizes": "512x512",
             "purpose": "maskable"
         }
+    ],
+    "screenshots": [
+        {
+         "src": "/realtimeVisualJS/img/screenshot_wide.png",
+          "sizes": "3840x1972",
+          "type": "image/gif",
+          "form_factor": "wide",
+          "label": "RTVJS"
+        }
     ]
 }
