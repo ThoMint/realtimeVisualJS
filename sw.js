@@ -1,6 +1,5 @@
 var VERSION = `v3`;
 var APP_PREFIX = 'rtvjs_';
-var GHPATH = '/realtimeVisualJS';
 
 var URLS = [
   './',
